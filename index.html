@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="referrer" content="no-referrer">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="What an AI engineering partner already understands about the Aceliun Oil Upgrader, and how it would raise production and make the technology repeatable enough to scale.">
+<meta name="description" content="What an AI engineering partner can do for the Aceliun Oil Upgrader - finding the most profitable way to run it, and turning one machine into a process that improves itself.">
 <title>Aceliun Upgrader Intelligence</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,6 @@
   --line:#dedad2; --line-2:#c8c3b8;
   --accent:#9a5b1e; --accent-soft:#f5e9dc;
   --good:#2f6b46;
-  --flag:#8a5a12; --flag-soft:#f7ecd9; --flag-line:#d9b978;
   --shadow:0 1px 2px rgba(26,26,24,.05),0 8px 24px -12px rgba(26,26,24,.12);
 }
 @media (prefers-color-scheme:dark){
@@ -29,7 +28,6 @@
     --line:#2e3138; --line-2:#3d414a;
     --accent:#d99a55; --accent-soft:#2c2318;
     --good:#7fc39a;
-    --flag:#d9ab5f; --flag-soft:#2b2418; --flag-line:#6b5527;
     --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.5);
   }
 }
@@ -39,7 +37,6 @@
   --line:#2e3138; --line-2:#3d414a;
   --accent:#d99a55; --accent-soft:#2c2318;
   --good:#7fc39a;
-  --flag:#d9ab5f; --flag-soft:#2b2418; --flag-line:#6b5527;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.5);
 }
 
@@ -49,32 +46,41 @@ body{margin:0;background:var(--bg);color:var(--ink);
   font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
 .wrap{max-width:860px;margin:0 auto;padding:0 24px 88px}
 
-.masthead{padding:72px 0 44px;border-bottom:1px solid var(--line)}
+.masthead{padding:72px 0 40px}
 .eyebrow{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;
   letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
   margin-bottom:20px;font-weight:500}
 h1{font-size:clamp(30px,5.2vw,46px);line-height:1.12;letter-spacing:-.022em;
-  font-weight:700;margin:0 0 20px}
+  font-weight:700;margin:0 0 20px;text-wrap:balance}
 .standfirst{font-size:clamp(17px,2.3vw,19px);color:var(--ink-2);margin:0;max-width:62ch}
-.meta{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px 28px;
+.meta{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px 28px;
   font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;color:var(--ink-3)}
 
-section{padding-top:56px}
-
-/* heading hierarchy: kicker > h2 section > h3 subsection */
+section{padding-top:52px}
 .kicker{font-size:11.5px;font-family:'IBM Plex Mono',ui-monospace,monospace;
   letter-spacing:.15em;text-transform:uppercase;color:var(--accent);
   font-weight:500;margin:0 0 10px}
 h2{font-size:clamp(24px,3.4vw,31px);line-height:1.15;letter-spacing:-.02em;
-  font-weight:700;margin:0 0 20px}
-h3{font-size:17.5px;font-weight:650;margin:40px 0 12px;letter-spacing:-.008em;
+  font-weight:700;margin:0 0 20px;text-wrap:balance}
+h3{font-size:17.5px;font-weight:650;margin:38px 0 12px;letter-spacing:-.008em;
   line-height:1.35;position:relative;padding-left:16px}
 h3::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;
   background:var(--accent);border-radius:1px}
 p{margin:0 0 16px;max-width:68ch}
 .lead{font-size:17px;color:var(--ink-2)}
 strong{font-weight:650;color:var(--ink)}
-.rule{height:1px;background:var(--line);margin:56px 0 0}
+.rule{height:1px;background:var(--line);margin:52px 0 0}
+
+/* hook capability cards */
+.caps{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
+  gap:14px;margin:28px 0 0}
+.cap{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  padding:22px 22px 20px;box-shadow:var(--shadow)}
+.cap .cn{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10.5px;
+  letter-spacing:.12em;color:var(--accent);font-weight:500}
+.cap .ct{font-size:16.5px;font-weight:650;line-height:1.3;margin:8px 0 7px;
+  letter-spacing:-.01em}
+.cap .cd{font-size:14px;color:var(--ink-2);line-height:1.55}
 
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;
   padding:26px 28px;box-shadow:var(--shadow);margin:24px 0}
@@ -89,18 +95,17 @@ strong{font-weight:650;color:var(--ink)}
 
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
   background:var(--line);border:1px solid var(--line);border-radius:12px;
-  overflow:hidden;margin:28px 0}
+  overflow:hidden;margin:26px 0}
 .stat{background:var(--surface);padding:20px 22px}
 .stat .n{font-size:28px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
 .stat .l{font-size:12.5px;color:var(--ink-3);margin-top:5px;line-height:1.4}
 
-/* vertical process flow */
 .pflow{background:var(--surface);border:1px solid var(--line);border-radius:12px;
-  padding:28px 28px 26px;margin:26px 0;box-shadow:var(--shadow)}
+  padding:26px 26px 24px;margin:26px 0;box-shadow:var(--shadow)}
 .pflow-h{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10.5px;
   letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);
   font-weight:500;margin-bottom:18px}
-.pstep{position:relative;display:flex;align-items:flex-start;gap:16px;padding:0 0 20px}
+.pstep{position:relative;display:flex;align-items:flex-start;gap:16px;padding:0 0 18px}
 .pstep:last-of-type{padding-bottom:0}
 .pstep::before{content:"";position:absolute;left:13px;top:28px;bottom:0;
   width:2px;background:var(--line);border-radius:1px}
@@ -115,12 +120,12 @@ strong{font-weight:650;color:var(--ink)}
 .pdesc{font-size:13.5px;color:var(--ink-2);margin-top:3px;line-height:1.5}
 .ptag{flex:0 0 auto;font-family:'IBM Plex Mono',ui-monospace,monospace;
   font-size:11.5px;color:var(--ink-3);padding-top:7px;text-align:right;
-  white-space:nowrap;letter-spacing:.01em}
+  white-space:nowrap}
 .pstep.key .pnum{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
 .pstep.key .pname{color:var(--accent)}
 .pstep.key .ptag{color:var(--accent)}
 
-.psplit{margin-top:24px;padding-top:22px;border-top:1px dashed var(--line-2)}
+.psplit{margin-top:22px;padding-top:20px;border-top:1px dashed var(--line-2)}
 .psplit-h{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10.5px;
   letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);
   font-weight:500;margin-bottom:14px}
@@ -131,28 +136,23 @@ strong{font-weight:650;color:var(--ink)}
 .branch.recycle{border-color:var(--accent);background:var(--accent-soft)}
 .bicon{flex:0 0 auto;width:32px;height:32px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
-  font-size:17px;line-height:1;font-weight:400;
+  font-size:17px;line-height:1;
   border:1.5px solid var(--line-2);background:var(--surface);color:var(--ink-2)}
 .branch.recycle .bicon{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
 .btext{flex:1 1 auto;min-width:0}
-.btext .bn{display:block;font-size:15.5px;font-weight:650;
-  line-height:1.25;margin:4px 0 5px}
+.btext .bn{display:block;font-size:15.5px;font-weight:650;line-height:1.25;margin:4px 0 5px}
 .branch.recycle .bn{color:var(--accent)}
 .btext .bd{display:block;font-size:13.5px;color:var(--ink-2);line-height:1.55}
 
-.flow-note{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line-2);
+.flow-note{margin-top:20px;padding-top:18px;border-top:1px dashed var(--line-2);
   font-size:14px;color:var(--ink-2);line-height:1.6}
 .flow-note strong{color:var(--ink)}
 
-@media (max-width:560px){
-  .pflow{padding:22px 18px}
-  .ptag{display:none}
-}
+@media (max-width:560px){ .pflow{padding:22px 18px} .ptag{display:none} }
 
-/* compounding loop */
 .loop{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:26px 0}
 .loop-step{background:var(--surface);border:1px solid var(--line);border-radius:10px;
-  padding:18px 18px 16px;box-shadow:var(--shadow);position:relative}
+  padding:18px 18px 16px;box-shadow:var(--shadow)}
 .loop-step .k{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10.5px;
   letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:500}
 .loop-step .s{font-size:15px;font-weight:650;margin:7px 0 5px;line-height:1.3}
@@ -163,15 +163,15 @@ strong{font-weight:650;color:var(--ink)}
 
 .tw{overflow-x:auto;margin:22px 0;border:1px solid var(--line);
   border-radius:12px;background:var(--surface)}
-table{border-collapse:collapse;width:100%;min-width:440px;font-size:14.5px}
+table{border-collapse:collapse;width:100%;min-width:460px;font-size:14.5px}
 th{text-align:left;padding:13px 18px;border-bottom:1px solid var(--line);
   font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;
   letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);
   font-weight:500;background:var(--surface-2)}
 td{padding:13px 18px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:last-child td{border-bottom:none}
-td.num{font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
-.dim{color:var(--ink-3)}
+.tag-have{color:var(--good);font-weight:600}
+.tag-need{color:var(--accent);font-weight:600}
 
 .horizon{border:1px solid var(--line);border-radius:12px;background:var(--surface);
   padding:26px 28px;margin:22px 0;box-shadow:var(--shadow);position:relative;overflow:hidden}
@@ -181,40 +181,25 @@ td.num{font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:t
 .h-title{font-size:20px;font-weight:650;margin:6px 0 10px;letter-spacing:-.012em}
 .h-sub{font-size:14.5px;color:var(--ink-2);margin:0 0 16px;max-width:64ch}
 .horizon ul{margin:0;padding-left:20px}
-.horizon li{margin-bottom:9px;font-size:15px;line-height:1.55}
+.horizon li{margin-bottom:10px;font-size:15px;line-height:1.55}
 .horizon li:last-child{margin-bottom:0}
 
-/* yellow flags */
-.flag{border:1px solid var(--flag-line);background:var(--flag-soft);
-  border-radius:10px;padding:20px 22px;margin:18px 0}
-.flag-h{display:flex;gap:11px;align-items:baseline;margin-bottom:9px}
-.flag-n{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11.5px;
-  color:var(--flag);font-weight:500;flex:0 0 auto}
-.flag-t{font-size:16px;font-weight:650;line-height:1.35}
-.flag p{font-size:14.5px;color:var(--ink-2);margin:0 0 12px}
-.flag p:last-child{margin-bottom:0}
-.flag p strong{color:var(--ink)}
-
-/* charts */
 .fig{background:var(--surface);border:1px solid var(--line);border-radius:12px;
-  padding:26px 26px 20px;margin:28px 0;box-shadow:var(--shadow)}
+  padding:26px 26px 20px;margin:26px 0;box-shadow:var(--shadow)}
 .fig svg{width:100%;height:auto;display:block}
 .fig-cap{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line-2);
   font-size:13px;color:var(--ink-3);line-height:1.55}
 .fig-cap strong{color:var(--ink-2)}
 .s-axis{stroke:var(--line-2);stroke-width:1.5}
-.s-grid{stroke:var(--line);stroke-width:1;stroke-dasharray:3 4}
 .s-value{stroke:var(--good);stroke-width:2.5;fill:none;stroke-linecap:round}
 .s-cost{stroke:var(--ink-3);stroke-width:2;fill:none;stroke-dasharray:6 4;stroke-linecap:round}
 .s-margin{stroke:var(--accent);stroke-width:3;fill:none;stroke-linecap:round}
 .s-peak{stroke:var(--accent);stroke-width:1.5;stroke-dasharray:4 4}
 .s-lab{fill:var(--ink-2);font-family:'Inter',sans-serif;font-size:13px;font-weight:600}
-.s-ax{fill:var(--ink-3);font-family:'IBM Plex Mono',monospace;font-size:11px;
-  letter-spacing:.06em;text-transform:uppercase}
+.s-ax{fill:var(--ink-3);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
 .s-peaklab{fill:var(--accent);font-family:'Inter',sans-serif;font-size:12.5px;font-weight:650}
 .s-zone{fill:var(--ink-3);opacity:.06}
 
-/* horizon timeline */
 .tline{background:var(--surface);border:1px solid var(--line);border-radius:12px;
   padding:26px 26px 22px;margin:26px 0;box-shadow:var(--shadow)}
 .tline-track{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
@@ -230,24 +215,25 @@ td.num{font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:t
 .pull{border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:26px 0;
   font-size:19px;line-height:1.45;font-weight:600;letter-spacing:-.012em;max-width:60ch}
 
-footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--line);
+footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);
   font-size:13px;color:var(--ink-3)}
 footer p{margin:0 0 6px;max-width:70ch}
 
 @media (max-width:640px){
-  .masthead{padding:52px 0 36px}
+  .masthead{padding:52px 0 32px}
   .card,.horizon{padding:22px 20px}
-  section{padding-top:44px}
+  section{padding-top:42px}
 }
 </style>
 </head>
 <body>
+
 <div class="wrap">
 
 <header class="masthead">
   <div class="eyebrow">Aceliun Energy &#183; Oil Upgrader</div>
   <h1>Turning one working machine into a process that improves itself</h1>
-  <p class="standfirst">What an AI engineering partner already understands about the unit, and how it would be used to raise production, shorten the improvement cycle, and make the technology repeatable enough to scale.</p>
+  <p class="standfirst">An AI engineering partner for the upgrader &#8212; what it does, how it raises production and margin, and how it makes the technology repeatable enough to scale.</p>
   <div class="meta">
     <span>27 August 2026</span>
     <span>Unit status: pre-commissioning</span>
@@ -256,21 +242,62 @@ footer p{margin:0 0 6px;max-width:70ch}
 
 <section>
   <div class="kicker">Section 01</div>
-  <h2>What the system already understands</h2>
-  <p class="lead">A single working session was spent reading everything available about the unit and building a structured engineering model of it. What follows is the result of that session &#8212; not a projection of what might be possible later.</p>
-  <p>The starting material was four documents: a research proposal, a technical report, a technical presentation, and the electrical construction drawings. <strong>None of them contained a process flow diagram or P&amp;ID for the machine being built.</strong> The process was reconstructed instead from the instrument tag numbering inside the electrical package &#8212; the tag sequence encodes the flow path, and the control system descriptions name every major item of equipment.</p>
+  <h2>What this system does</h2>
+  <p class="lead">Six capabilities, applied continuously to the upgrader from commissioning onward.</p>
+
+  <div class="caps">
+    <div class="cap">
+      <div class="cn">01</div>
+      <div class="ct">Finds the most profitable way to run the unit</div>
+      <div class="cd">Calculates how many passes through the cavitation device actually maximise margin &#8212; then recalculates it as feed quality, machine condition and crude pricing move.</div>
+    </div>
+    <div class="cap">
+      <div class="cn">02</div>
+      <div class="ct">Makes product value visible while the batch is running</div>
+      <div class="cd">Turns an instrument already fitted to the skid into a live indication of how far the batch has been upgraded, instead of waiting on a lab result.</div>
+    </div>
+    <div class="cap">
+      <div class="cn">03</div>
+      <div class="ct">Turns every batch into evidence</div>
+      <div class="cd">Each run sharpens the model of how the machine behaves, so the unit becomes better understood the longer it operates rather than simply older.</div>
+    </div>
+    <div class="cap">
+      <div class="cn">04</div>
+      <div class="ct">Recovers engineering knowledge that was never written down</div>
+      <div class="cd">Already demonstrated on this unit: the full process configuration was reconstructed from the electrical drawings, because no process drawing existed.</div>
+    </div>
+    <div class="cap">
+      <div class="cn">05</div>
+      <div class="ct">Watches every instrument, continuously</div>
+      <div class="cd">Detects drift, faults and impossible readings early &#8212; before they quietly corrupt months of operating conclusions and the decisions built on them.</div>
+    </div>
+    <div class="cap">
+      <div class="cn">06</div>
+      <div class="ct">Builds the design basis needed to sell units</div>
+      <div class="cd">Converts one working machine into a documented, defensible package that a buyer&#8217;s engineers can examine and accept.</div>
+    </div>
+  </div>
+
+  <p style="margin-top:26px">The fourth of those has already happened, which is why this document exists rather than proposing that it might. What follows is what the same approach produces once the unit is running.</p>
+</section>
+
+<div class="rule"></div>
+
+<section>
+  <div class="kicker">Section 02</div>
+  <h2>It already understands the machine</h2>
+  <p class="lead">A single working session was spent reading everything available about the unit and building a structured engineering model of it.</p>
+
+  <p>The starting material was four documents: a research proposal, a technical report, a technical presentation, and the electrical construction drawings. <strong>None contained a process flow diagram or P&amp;ID for the machine being built.</strong> The process was reconstructed instead from the instrument tag numbering inside the electrical package &#8212; the tag sequence encodes the flow path, and the control system descriptions name every major item of equipment.</p>
 
   <div class="stats">
     <div class="stat"><div class="n">4</div><div class="l">documents read and cross-referenced</div></div>
     <div class="stat"><div class="n">54</div><div class="l">instrument tags catalogued with location and function</div></div>
-    <div class="stat"><div class="n">40</div><div class="l">open questions logged and prioritised</div></div>
+    <div class="stat"><div class="n">16</div><div class="l">live continuous measurements mapped to what they see</div></div>
   </div>
 
-  <h3>The process</h3>
-  <p>A <strong>recirculating batch cavitation upgrader</strong>. Feed is heated above its pour point, pumped at pressure through a cavitation device where collapsing vapour bubbles crack heavy hydrocarbon molecules, then either returned for another pass or routed to product. Sonic and electrical energy are injected into the device to stabilise the cracked fragments.</p>
-
   <div class="pflow">
-    <div class="pflow-h">Process sequence</div>
+    <div class="pflow-h">Process sequence, as reconstructed</div>
 
     <div class="pstep">
       <div class="pnum">1</div>
@@ -327,7 +354,7 @@ footer p{margin:0 0 6px;max-width:70ch}
             <div class="bd">Not yet on specification. Returns to step&nbsp;2 for another pass through the device.</div>
           </div>
         </div>
-        <div class="branch out">
+        <div class="branch">
           <div class="bicon">&#8594;</div>
           <div class="btext">
             <div class="bn">Production</div>
@@ -340,50 +367,43 @@ footer p{margin:0 0 6px;max-width:70ch}
     <div class="flow-note"><strong>The recycle branch is the heart of the process.</strong> A charge circulates through steps 2 to 5 repeatedly until it meets specification, which means <strong>the number of passes &#8212; not the flow rate &#8212; is the primary operating variable,</strong> and the one that most directly determines both product value and throughput.</div>
   </div>
 
-  <h3>The machine and its instrumentation</h3>
-  <p>Skid-mounted, split into an electrical room and a process room. Two variable-speed pumps, three tanks, four control valves, an electrically heated feed tank, and a dedicated cooling circuit for the sonic system.</p>
-  <p>The control system carries <strong>17 continuous measurements and 36 discrete signals</strong> &#8212; six flow meters with totalisers, pressure and temperature both entering and leaving the cavitation device, an <strong>inline viscosity transmitter</strong> on the outlet, tank levels, and gas detection. Nine spare measurement channels are already wired and terminated.</p>
-
   <div class="callout">
-    <span class="label">Why this matters</span>
-    <p>The viscosity transmitter is the most valuable instrument on the skid &#8212; it is the natural measure of whether a batch is finished, and the natural target for optimisation. The flow meters are sufficient to track material around the recycle loop and count passes. <strong>This is a better-instrumented unit than most of its size, which is precisely what makes systematic improvement possible rather than theoretical.</strong></p>
+    <span class="label">Why the instrumentation matters</span>
+    <p>The skid carries six flow meters with totalisers, pressure and temperature both entering and leaving the cavitation device, and an <strong>inline viscosity transmitter</strong> on the outlet &#8212; the natural measure of whether a batch is finished. Seven spare measurement channels are available at the control panel. <strong>This is a better-instrumented unit than most of its size, which is what makes systematic improvement achievable rather than theoretical.</strong></p>
   </div>
 </section>
 
 <div class="rule"></div>
 
 <section>
-  <div class="kicker">Section 02</div>
+  <div class="kicker">Section 03</div>
   <h2>Where production is currently left on the table</h2>
 
-  <p class="lead">This machine has one dominant operating decision, and it pulls against itself.</p>
+  <p class="lead">The unit has one dominant operating decision, and it pulls against itself.</p>
 
-  <p>Every additional pass through the cavitation device makes the oil lighter and more valuable. Every additional pass also burns energy, occupies the machine, and consumes equipment life. <strong>More passes means better oil and less of it.</strong></p>
+  <p>The unit is built around a premise: each pass through the cavitation device upgrades the oil further, so a charge is recirculated until it meets specification. Every pass also burns energy, occupies the machine and consumes equipment life. <strong>If the premise holds, more passes means better oil and less of it.</strong></p>
+
+  <p>How much each pass actually delivers on this feedstock has never been measured. That measurement is the first thing the work below produces, and everything else depends on it.</p>
 
   <div class="fig">
-    <svg viewBox="0 0 720 320" role="img" aria-label="Conceptual chart showing product value rising with diminishing returns, cost rising steadily, and margin peaking then falling as the number of passes increases.">
+    <svg viewBox="0 0 720 320" role="img" aria-label="Chart showing product value rising with diminishing returns, cost rising steadily, and margin peaking then falling as the number of passes increases.">
       <rect class="s-zone" x="330" y="40" width="350" height="215"/>
       <line class="s-axis" x1="62" y1="255" x2="690" y2="255"/>
       <line class="s-axis" x1="62" y1="36" x2="62" y2="255"/>
-
       <path class="s-value" d="M62,250 C160,145 265,110 385,97 C490,88 590,83 686,80"/>
       <path class="s-cost"  d="M62,250 L686,122"/>
       <path class="s-margin" d="M62,250 C132,192 232,157 312,154 C392,158 520,192 686,238"/>
-
       <line class="s-peak" x1="312" y1="154" x2="312" y2="255"/>
       <circle cx="312" cy="154" r="5" fill="var(--accent)"/>
-
       <text class="s-lab" x="498" y="70" fill="var(--good)">Product value</text>
       <text class="s-lab" x="556" y="132">Cost</text>
       <text class="s-lab" x="120" y="228" fill="var(--accent)">Margin</text>
-
       <text class="s-peaklab" x="322" y="128">Most profitable point</text>
       <text class="s-ax" x="404" y="278">over-processing</text>
-
       <text class="s-ax" x="62" y="300">Passes through the device &#8594;</text>
       <text class="s-ax" x="62" y="24">Value and cost per batch</text>
     </svg>
-    <div class="fig-cap"><strong>Illustrative, not measured.</strong> The shape is characteristic of this kind of process &#8212; value rises with diminishing returns while cost rises steadily, so margin peaks and then falls. Where the peak actually sits for this machine on this feedstock is precisely what a commissioning test campaign establishes.</div>
+    <div class="fig-cap"><strong>Illustrative, not measured.</strong> The shape is characteristic of this kind of process &#8212; value rises with diminishing returns while cost rises steadily, so margin peaks and then falls. Where the peak sits for this machine on this feedstock is what the commissioning work establishes.</div>
   </div>
 
   <p>Short of the peak, oil leaves the plant worth less than it could have been. Past it, machine time and power are being spent producing quality that does not earn its cost.</p>
@@ -397,47 +417,71 @@ footer p{margin:0 0 6px;max-width:70ch}
     <div class="stat"><div class="n">4</div><div class="l">Feed waiting &#8212; decides if machine time is scarce</div></div>
   </div>
 
-  <p>Nobody knows where that point sits for this machine on this feedstock, because it has never been measured. <strong>Establishing it and keeping it current is the largest recurring opportunity the unit presents</strong> &#8212; it repeats on every batch, for the life of the equipment.</p>
-
-  <p>The same measurements answer the throughput questions too: where the batch cycle loses time, which step limits the rate, and what a second unit should be built to do differently.</p>
+  <p><strong>This is the largest recurring opportunity the unit presents.</strong> It repeats on every batch, for the life of the equipment, and the same measurements that answer it also answer where the batch cycle loses time and which step limits throughput.</p>
 </section>
 
 <div class="rule"></div>
 
 <section>
-  <div class="kicker">Section 03</div>
+  <div class="kicker">Section 04</div>
+  <h2>How the profitable operating point gets calculated</h2>
+  <p class="lead">Not a principle &#8212; a model, with defined inputs. Here is its structure and what each input requires.</p>
+
+  <div class="card">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:14px;line-height:1.9;color:var(--ink-2);margin:0">
+      <strong style="color:var(--ink)">margin per batch</strong> =<br>
+      &nbsp;&nbsp;(volume out &#215; price at achieved quality)<br>
+      &nbsp;&nbsp;&#8722; (passes &#215; cost per pass)<br><br>
+      <strong style="color:var(--accent)">optimum</strong> = the pass count where the next pass stops paying for itself
+    </p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Input</th><th>Where it comes from</th><th>Status today</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Quality gain per pass</strong></td><td>Lab samples taken through a batch during commissioning</td><td class="tag-need">Measured at startup</td></tr>
+        <tr><td><strong>Cost per pass</strong></td><td>Load signal from the variable-speed drives</td><td class="tag-have">Unused output already fitted</td></tr>
+        <tr><td><strong>Price versus quality</strong></td><td>Your existing sales terms</td><td class="tag-have">Known to the business</td></tr>
+        <tr><td><strong>Feed quality</strong></td><td>Assay of the oil actually being skimmed</td><td class="tag-need">Sample and lab test</td></tr>
+        <tr><td><strong>Value of machine time</strong></td><td>Whether feed is waiting to be processed</td><td class="tag-have">Known to the business</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Two of the five inputs are already known to the business</strong> &#8212; your sales terms and whether feed is waiting. A third needs a cable and a drive setting rather than new equipment: the variable-speed drives carry an unused analog output and the control system has spare input channels. The remaining two come from lab samples taken while the unit is being commissioned.</p>
+
+  <h3>Making product value visible in real time</h3>
+
+  <p>Upgraded crude is typically priced on gravity, and the skid cannot measure gravity. It does measure <strong>viscosity, continuously</strong>, at the cavitation outlet.</p>
+
+  <p>Taking lab samples at intervals through the first batches establishes the relationship between the two. After that, an instrument already bolted to the machine becomes a <strong>live readout of what the batch in the tank is currently worth</strong> &#8212; and the operator can see, while running, how close the charge is to the point where further processing stops paying.</p>
+
+  <p>It costs some lab work during commissioning and nothing afterwards.</p>
+</section>
+
+<div class="rule"></div>
+
+<section>
+  <div class="kicker">Section 05</div>
   <h2>The compounding loop</h2>
-  <p class="lead">The value is not a one-off analysis. It is a cycle that tightens each time it runs &#8212; and it is the mechanism behind everything in the following three sections.</p>
+  <p class="lead">The value is not a one-off analysis. It is a cycle that tightens each time it runs.</p>
 
   <div class="loop">
-    <div class="loop-step">
-      <div class="k">Step 01</div>
-      <div class="s">Measure</div>
-      <div class="d">Every batch logged in full &#8212; conditions, pass count, energy, outcome.</div>
-    </div>
-    <div class="loop-step">
-      <div class="k">Step 02</div>
-      <div class="s">Find the pattern</div>
-      <div class="d">Which variables actually moved the result, separated from noise.</div>
-    </div>
-    <div class="loop-step">
-      <div class="k">Step 03</div>
-      <div class="s">Change one thing</div>
-      <div class="d">A single deliberate adjustment, with the expected result written down first.</div>
-    </div>
-    <div class="loop-step">
-      <div class="k">Step 04</div>
-      <div class="s">Compare</div>
-      <div class="d">Outcome against prediction. Where they differ, the model was wrong and improves.</div>
-    </div>
+    <div class="loop-step"><div class="k">Step 01</div><div class="s">Measure</div>
+      <div class="d">Every batch logged in full &#8212; conditions, pass count, energy, outcome.</div></div>
+    <div class="loop-step"><div class="k">Step 02</div><div class="s">Find the pattern</div>
+      <div class="d">Which variables actually moved the result, separated from noise.</div></div>
+    <div class="loop-step"><div class="k">Step 03</div><div class="s">Change one thing</div>
+      <div class="d">A single deliberate adjustment, with the expected result written down first.</div></div>
+    <div class="loop-step"><div class="k">Step 04</div><div class="s">Compare</div>
+      <div class="d">Outcome against prediction. Where they differ, the model was wrong and improves.</div></div>
   </div>
   <div class="loop-back">&#8634; &nbsp;each pass through the loop makes the next recommendation sharper</div>
 
   <p style="margin-top:26px">Most units never close this loop. They accumulate operating data for years without a structure that turns it into knowledge, and improvement stays a matter of opinion.</p>
 
   <p class="pull">The difference between a machine that has run for a year and a machine that has learned for a year is entirely in whether this loop was running.</p>
-
-  <h3>How that plays out over time</h3>
 
   <div class="tline">
     <div class="tline-track">
@@ -464,64 +508,53 @@ footer p{margin:0 0 6px;max-width:70ch}
 <div class="rule"></div>
 
 <section>
-  <div class="kicker">Section 04</div>
-  <h2>Short term &#183; the first months of operation</h2>
-
-  <div class="horizon">
-    <div class="h-when">Horizon one</div>
-    <div class="h-title">Make the machine legible</div>
-    <p class="h-sub">Before anything can be improved, what the machine actually does has to be established as fact rather than expectation.</p>
-    <ul>
-      <li><strong>Characterise the baseline</strong> &#8212; the documented reference every future change is measured against. Without it, no improvement can ever be proven, only asserted.</li>
-      <li><strong>Make product value visible in real time.</strong> The unit measures viscosity continuously but cannot measure the gravity the oil is actually sold on. Laboratory samples taken during commissioning would establish the relationship between the two, turning an existing instrument into a live readout of what the batch is worth.</li>
-      <li><strong>Measure the uplift-per-pass curve</strong> &#8212; how much each additional cycle genuinely delivers, and where the returns flatten. This is the curve that answers the question in Section 02.</li>
-      <li><strong>Find where the batch cycle loses time</strong> and which step limits throughput.</li>
-      <li><strong>Verify inherited performance expectations</strong> against this feedstock, replacing assumption with measurement.</li>
-      <li><strong>Check instrument integrity continuously</strong> &#8212; drift and faults caught early, before they quietly corrupt months of conclusions.</li>
-    </ul>
-  </div>
-</section>
-
-<div class="rule"></div>
-
-<section>
-  <div class="kicker">Section 05</div>
-  <h2>Long term &#183; ongoing operation</h2>
-
-  <div class="horizon">
-    <div class="h-when">Horizon two</div>
-    <div class="h-title">Operate at the most profitable point, continuously</div>
-    <p class="h-sub">Once the curves are measured, the optimum can be calculated rather than guessed &#8212; and recalculated as conditions move.</p>
-    <ul>
-      <li><strong>Set pass count against margin, not habit.</strong> The point where an additional pass stops paying is computed from measured data and updated as inputs change.</li>
-      <li><strong>Track the market.</strong> When the heavy-to-light price differential widens, additional processing pays; when it narrows, it does not. Operating targets that move with the market rather than lagging it.</li>
-      <li><strong>Adapt to feed variability</strong> &#8212; recommended treatment matched to the quality of the oil actually arriving, rather than fixed to an average that may rarely occur.</li>
-      <li><strong>Raise throughput by removing the limiting step</strong>, identified from cycle data rather than from impression.</li>
-      <li><strong>Predictive maintenance.</strong> Cavitation is inherently erosive. Tracking device condition over time converts unplanned failures into scheduled work.</li>
-      <li><strong>Autonomous monitoring</strong> &#8212; routine analysis running on its own against live data, surfacing only what needs a decision.</li>
-      <li><strong>Design V2 from measured evidence</strong> rather than from opinion, so the next unit inherits what was learned instead of what was assumed.</li>
-    </ul>
-  </div>
-</section>
-
-<div class="rule"></div>
-
-<section>
   <div class="kicker">Section 06</div>
-  <h2>Scaling &#183; multiple units</h2>
+  <h2>What it delivers, over time</h2>
 
   <div class="horizon">
-    <div class="h-when">Horizon three</div>
+    <div class="h-when">Horizon one &#183; first months of operation</div>
+    <div class="h-title">Establish what the machine actually does</div>
+    <p class="h-sub">Before anything can be improved, the unit&#8217;s behaviour has to be established as fact rather than expectation.</p>
+    <ul>
+      <li><strong>A characterised baseline</strong> &#8212; the documented reference every future change is measured against. Without it, no improvement can be proven, only asserted.</li>
+      <li><strong>The uplift-per-pass curve</strong> &#8212; how much each additional cycle genuinely delivers, and where the returns flatten. This is the curve that answers Section 03.</li>
+      <li><strong>Product value visible live</strong>, through the viscosity relationship described above.</li>
+      <li><strong>The bottleneck identified</strong> &#8212; where the batch cycle loses time and which step limits throughput.</li>
+      <li><strong>Instrument integrity confirmed</strong> &#8212; drift and faults caught before they corrupt months of conclusions.</li>
+    </ul>
+  </div>
+
+  <div class="horizon">
+    <div class="h-when">Horizon two &#183; ongoing operation</div>
+    <div class="h-title">Operate at the most profitable point, continuously</div>
+    <p class="h-sub">Once the curves are measured, the optimum is calculated rather than guessed &#8212; and recalculated as conditions move.</p>
+    <ul>
+      <li><strong>Pass count set against margin, not habit.</strong> The point where an additional pass stops paying is computed from measured data and updated as inputs change.</li>
+      <li><strong>Operating targets that track the market.</strong> When the heavy-to-light price differential widens, additional processing pays; when it narrows, it does not. The target moves with it rather than lagging it.</li>
+      <li><strong>Treatment matched to the oil actually arriving</strong>, rather than fixed to an average that may rarely occur.</li>
+      <li><strong>Throughput raised by removing the limiting step</strong>, identified from cycle data rather than impression.</li>
+      <li><strong>Predictive maintenance.</strong> Cavitation is inherently erosive; tracking device condition converts unplanned failures into scheduled work.</li>
+      <li><strong>Autonomous monitoring</strong> &#8212; routine analysis running against live data, surfacing only what needs a decision.</li>
+    </ul>
+  </div>
+
+  <div class="horizon">
+    <div class="h-when">Horizon three &#183; multiple units</div>
     <div class="h-title">Turn one working machine into a repeatable product</div>
     <p class="h-sub">Selling or replicating units requires something a single working machine does not automatically produce: a design that can be handed to someone else.</p>
     <ul>
-      <li><strong>Produce the documented, transferable design package.</strong> A machine cannot be sold, warranted, or manufactured repeatably from a design that exists only as one physical object. Assembling that package is a direct output of the work described above.</li>
-      <li><strong>Generate performance evidence that survives technical diligence</strong> &#8212; measured, sourced and reproducible, so that what is presented to a buyer or partner holds up when examined.</li>
-      <li><strong>Establish the performance envelope across feedstocks</strong>, so what can be promised to a customer is known rather than hoped.</li>
-      <li><strong>Standardise commissioning</strong>, so each new unit is brought online against a proven protocol instead of being worked out again from scratch.</li>
-      <li><strong>Monitor a fleet.</strong> Comparing units against each other turns every installation into evidence about all of them &#8212; and a problem found on one becomes a fix applied to all.</li>
-      <li><strong>The accumulated engineering record becomes an asset in itself</strong> &#8212; part of what a buyer, partner or lender is actually being offered.</li>
+      <li><strong>The documented, transferable design package.</strong> A machine cannot be sold, warranted or manufactured repeatably from a design that exists only as one physical object. Assembling that package is a direct output of the work above.</li>
+      <li><strong>Performance evidence that survives technical diligence</strong> &#8212; measured, sourced and reproducible, so what is presented to a buyer or lender holds up when examined.</li>
+      <li><strong>A known performance envelope across feedstocks</strong>, so what can be promised to a customer is known rather than hoped.</li>
+      <li><strong>Standardised commissioning</strong>, so each new unit is brought online against a proven protocol instead of being worked out again.</li>
+      <li><strong>Fleet monitoring.</strong> Comparing units against each other turns every installation into evidence about all of them &#8212; a problem found on one becomes a fix applied to all.</li>
+      <li><strong>The accumulated engineering record as an asset in itself</strong> &#8212; part of what a buyer, partner or lender is actually being offered.</li>
     </ul>
+  </div>
+
+  <div class="callout">
+    <span class="label">Beyond the upgrader</span>
+    <p>The method is not specific to this machine. Any operation where a controllable variable trades against cost &#8212; and where the right setting moves with market conditions &#8212; can be modelled the same way. <strong>The upgrader is the first application, not the only one.</strong></p>
   </div>
 </section>
 
@@ -529,65 +562,17 @@ footer p{margin:0 0 6px;max-width:70ch}
 
 <section>
   <div class="kicker">Section 07</div>
-  <h2>The capability grows as the system becomes better understood</h2>
+  <h2>The capability grows as the system is understood</h2>
 
   <p class="lead">Everything above is written from a standing start &#8212; four documents, no operating data, and a machine that has not yet run.</p>
 
-  <p>The current model was built entirely from paper. Forty questions about the unit remain open, and they are the ordinary kind: what the equipment is rated for, what the instruments actually measure, what the incoming oil looks like. <strong>As those are answered, and as the machine starts producing live data, both the depth of the model and the range of what can be done with it expand together.</strong></p>
+  <p>The current model was built entirely from paper. Ordinary questions about the unit remain open: what the equipment is rated for, what the instruments measure, what the incoming oil looks like. <strong>As those are answered, and as the machine begins producing live data, both the depth of the model and the range of what can be done with it expand together.</strong></p>
 
-  <p>The relationship is direct. Better information produces sharper analysis; sharper analysis produces better questions; live operating data converts what is currently reasoning about a machine into measurement of one. The capability described in the preceding sections is therefore a floor rather than a ceiling.</p>
-</section>
-
-<div class="rule"></div>
-
-<section>
-  <div class="kicker">Section 08</div>
-  <h2>Yellow flags found in the documents</h2>
-  <p class="lead">These surfaced while reading the existing material. None is presented as a conclusion, and none is fatal &#8212; but each is the kind of item that is inexpensive to address now and awkward to discover later.</p>
-
-  <div class="flag">
-    <div class="flag-h"><span class="flag-n">FLAG 01</span><span class="flag-t">The quoted performance figures rest on an unmatched sample comparison</span></div>
-    <p>Tracing each headline performance figure back to its source shows they are reproduced only by comparing <strong>two laboratory samples that are not a matched before-and-after pair</strong> &#8212; a feed sample from one date against a product sample taken three months earlier from a different batch. The documents do contain a genuine matched pair, taken from the same oil on the same day, but it is not cited anywhere.</p>
-
-    <div class="tw">
-      <table>
-        <thead><tr><th>Measure</th><th>As quoted</th><th>Matched pair</th></tr></thead>
-        <tbody>
-          <tr><td>Sulphur reduction</td><td class="num dim">32%</td><td class="num">14%</td></tr>
-          <tr><td>Product API gravity</td><td class="num dim">15.2</td><td class="num">9.0</td></tr>
-          <tr><td>Product viscosity</td><td class="num dim">8,900 cSt</td><td class="num">354,000 cSt</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p><strong>This is not a finding that the technology does not work.</strong> The matched pair shows real, physically coherent upgrading &#8212; gravity rose, sulphur fell, heavy residue converted from 65% to 60%, and the oil measurably lightened. The effect is genuine. It is roughly half of what has been quoted, and it was measured on a different feedstock than this unit will process.</p>
-    <p>The reason to note it now is that the same check would be run by any buyer, lender or partner conducting technical diligence, using only documents the business already holds. Establishing a measured performance basis on the actual feedstock resolves it entirely.</p>
-  </div>
-
-  <div class="flag">
-    <div class="flag-h"><span class="flag-n">FLAG 02</span><span class="flag-t">The sonic system has no monitoring of any kind</span></div>
-    <p>The sonic energy input is central to how the process is understood to work. In the electrical design it appears as two standard receptacles and a dedicated cooling circuit, and it is <strong>not connected to the control system</strong> &#8212; there is no measurement of its power, frequency or condition.</p>
-    <p>If it degrades or fails, nothing reports it. The first symptom would be batches quietly failing to reach specification, noticed late, with no way to identify the cause. A modest addition would close this.</p>
-  </div>
-
-  <div class="flag">
-    <div class="flag-h"><span class="flag-n">FLAG 03</span><span class="flag-t">Two documents disagree on how sulphur leaves the process</span></div>
-    <p>The technical narrative states that sulphur is converted into a harmless solid. The laboratory data included in the same document does not support this. Separately, both the earlier research proposal and the current electrical design specify equipment for handling <strong>hydrogen sulphide</strong> &#8212; meaning two independent engineering parties, years apart, designed for its presence.</p>
-    <p>This is a straightforward question to settle definitively before the unit runs, and it affects gas handling and personnel protection.</p>
-  </div>
-
-  <div class="flag">
-    <div class="flag-h"><span class="flag-n">FLAG 04</span><span class="flag-t">A measurement capability is installed and going unused</span></div>
-    <p>The variable-speed drives carry an unused output signal, and the control system has spare input channels already terminated. Connecting them would make <strong>energy consumption per pass</strong> measurable &#8212; a required input to the profitability question in Section 02.</p>
-    <p>No new equipment is involved. This is the least expensive improvement identified.</p>
-  </div>
-
-  <p style="margin-top:28px">All four are ordinary findings for a technology at this stage, and all four are cheap to resolve while the machine is still being finished. They are included here because identifying this kind of item early &#8212; before it reaches a customer, a lender, or a commissioning failure &#8212; is a representative example of what the work in the preceding sections produces.</p>
+  <p>The relationship is direct. Better information produces sharper analysis; sharper analysis produces better questions; live operating data converts reasoning about a machine into measurement of one. <strong>What is described here is a floor, not a ceiling.</strong></p>
 </section>
 
 <footer>
   <p>Prepared 27 August 2026 from documents held by the business. Every figure cited carries a recorded source in the underlying engineering record.</p>
-  <p>Performance figures described as measured originate from third-party laboratory analysis reports contained within the existing technical documentation.</p>
 </footer>
 
 </div>
